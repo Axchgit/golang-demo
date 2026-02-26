@@ -7,11 +7,16 @@ func main() {
 	fmt.Println(str)
 
 	var b, c int = 1, 5
-	fmt.Println(b*c)
+	fmt.Println(b * c)
 
 	var d *int
 	fmt.Println(d)
 
 	f, g := "good", "boy"
-	fmt.Println(f+"  "+g)
+	fmt.Println(f + "  " + g)
+
+	i := 10
+	j := i
+
+	fmt.Println(&i, &j)
 }
