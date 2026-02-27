@@ -18,7 +18,7 @@ type Config struct {
 }
 
 func LoadConfig() *Config {
-	return &Config{Port: 8080, DB: "postgres://..."}
+	return &(Config{Port: 8080, DB: "postgres://..."})
 }
 
 type Server struct {
