@@ -1,5 +1,7 @@
 package main
 
+// 条件控制
+
 import "fmt"
 
 func main() {
