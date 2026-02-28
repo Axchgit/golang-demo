@@ -7,12 +7,14 @@ import "fmt"
 func main() {
 	a, b := 1, 2
 
+	// if/else
 	if a == b {
 		fmt.Println("a == b")
 	} else {
 		fmt.Println("a != b")
 	}
 
+	// 简单表达式
 	if x := 1; x > 1 {
 		fmt.Println(x)
 	} else {
@@ -31,6 +33,7 @@ func main() {
 		fmt.Println("不及格")
 	}
 
+	// switch 分支类型需要和表达式一致
 	switch_val := "b"
 
 	switch switch_val {
