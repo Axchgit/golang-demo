@@ -35,7 +35,7 @@ const (
 const (
 	ab = "abc"
 	ac = len(ab)
-	ad = unsafe.Sizeof(ab)
+	ad = unsafe.Sizeof(ab) // 获取的是类型字节长度
 	ae = unsafe.Sizeof(ac)
 	af = unsafe.Sizeof(ad)
 )
