@@ -38,4 +38,14 @@ func main() {
 	db := slices.Clone(a[:])
 
 	fmt.Println(&a, ab, ac, ad, af, da, cap(da), cap(db), dc)
+
+	ca := make([]int, 5, 10)
+	fmt.Println(ca, len(ca), cap(ca))
+
+	cb := []int{1, 2, 4}
+	cc := [2]int{1, 2}
+
+	cb = append(cb, 5)
+
+	fmt.Printf("%T %T %T \n", ca, cb, cc)
 }
