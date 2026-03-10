@@ -48,4 +48,34 @@ func main() {
 	cb = append(cb, 5)
 
 	fmt.Printf("%T %T %T \n", ca, cb, cc)
+
+	// 切片切割拼接常用写法
+	ce := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	ce = append(ce[:2], append([]int{100}, ce[2:]...)...)
+
+	cf := append(ce[:2], ce[5:]...)
+
+	fmt.Println(ce, cf)
+
+	cm := ce[:0]
+	fmt.Println(cm)
+
+	// copy
+	ada := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+	adb := make([]int, 10, 10)
+
+	fmt.Println(len(adb), cap(adb))
+
+	// copy要看长度不是容量
+	adc := copy(adb, ada)
+
+	fmt.Println(ada, adb, adc)
+
+	for ea, eb := range ada {
+		fmt.Println(ea, eb)
+	}
+
+	// 多维切片
+
 }
