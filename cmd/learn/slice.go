@@ -72,10 +72,13 @@ func main() {
 
 	fmt.Println(ada, adb, adc)
 
-	for ea, eb := range ada {
-		fmt.Println(ea, eb)
-	}
+	// for ea, eb := range ada {
+	// 	fmt.Println(ea, eb)
+	// }
 
 	// 多维切片
+
+	add := [][]int{[]int{1, 2, 3}, []int{2}}
+	fmt.Println(add)
 
 }
