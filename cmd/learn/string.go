@@ -66,4 +66,12 @@ func main() {
 	builder.WriteString("链接B")
 	builder.WriteString("链接C")
 	fmt.Println(builder.String())
+
+	for index, ab := range d {
+		fmt.Println(index, string(ab))
+	}
+
+	for i := 0; i < len(d); i++ {
+		fmt.Println(string(d[i]))
+	}
 }
